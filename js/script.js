@@ -26,11 +26,11 @@ $(document).ready(function() {
 		scale:true,
 		zIndex:0
 	});
-	$('#videowork1').videoBG({
-		mp4:'assets/about3.mp4',
-		ogv:'assets/about3.ogv',
-		webm:'assets/about3.webm',
-		poster:'assets/about3.jpg',
+	$('#forth').videoBG({
+		mp4:'assets/youtube.mp4',
+		ogv:'assets/youtube.ogv',
+		webm:'assets/youtube.webm',
+		poster:'assets/youtube.jpg',
 		scale:true,
 		zIndex:0
 	});
