@@ -34,6 +34,7 @@ html {
     border: none; }
   html body {
     overflow: hidden;
+    font-family: "tall_films_expandedregular";
     /* MAIN MENU */
     /*	BEGIN HOME	 */
     /*   END OF HOME
@@ -62,7 +63,6 @@ html {
       html body nav a {
         margin-left: 35px;
         margin-right: 35px;
-        font-family: "tall_films_expandedregular";
         line-height: 50px;
         text-decoration: none;
         font-size: 18px;
@@ -84,176 +84,380 @@ html {
         html body .home#first #videohome1 {
           width: 100%;
           height: 100%;
-          position: relative; }
-          html body .home#first #videohome1 .content {
-            width: 70%;
-            max-width: 829px;
-            max-height: 346px;
-            min-width: 300px;
-            padding-top: 230px;
-            margin: 0 auto; }
-            html body .home#first #videohome1 .content img {
-              width: 100%;
-              height: auto; }
+          position: relative;
+          filter: hue-rotate(20deg);
+          -webkit-filter: hue-rotate(20deg);
+          -moz-filter: hue-rotate(20deg);
+          -o-filter: hue-rotate(20deg);
+          -ms-filter: hue-rotate(20deg); }
+        html body .home#first .content {
+          width: 70%;
+          max-width: 829px;
+          max-height: 346px;
+          min-width: 300px;
+          padding-top: 230px;
+          margin: 0 auto; }
+          html body .home#first .content img {
+            width: 100%;
+            height: auto; }
       html body .home#second {
         left: 100%; }
         html body .home#second #videohome2 {
           width: 100%;
           height: 100%;
           position: relative; }
-          html body .home#second #videohome2 .content1, html body .home#second #videohome2 .content2, html body .home#second #videohome2 .content3 {
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-            border: 2px dashed rgba(250, 250, 250, 0.4);
-            text-align: center;
-            font-family: "tall_films_expandedregular";
-            font-size: 60px;
-            color: white;
-            letter-spacing: 2px;
-            display: block;
-            cursor: crosshair;
-            line-height: 200px;
-            background-color: rgba(250, 250, 250, 0.05); }
-          html body .home#second #videohome2 .content1 {
-            margin-top: 170px;
-            margin-left: 16%; }
-          html body .home#second #videohome2 .content2 {
-            margin-top: -160px;
-            margin-left: 67%; }
-          html body .home#second #videohome2 .content3 {
-            margin-top: 0;
-            margin-left: 30%; }
-          html body .home#second #videohome2 .heading {
-            opacity: 1;
-            transition: opacity 0.5s ease-out;
-            -moz-transition: opacity 0.5s ease-out;
-            -webkit-transition: opacity 0.5s ease-out; }
-          html body .home#second #videohome2 .content1:hover .heading, html body .home#second #videohome2 .content2:hover .heading, html body .home#second #videohome2 .content3:hover .heading {
-            opacity: 0;
-            transition: opacity 0.5s ease-in;
-            -moz-transition: opacity 0.5s ease-in;
-            -webkit-transition: opacity 0.5s ease-in; }
-          html body .home#second #videohome2 .rollovertext {
-            font-size: 31px;
-            line-height: 37px;
-            margin: -202px -2px;
-            color: white;
-            width: 144px;
-            height: 104px;
-            border-radius: 100px;
-            font-weight: 300;
-            letter-spacing: 0;
-            font-family: "tall_films_expandedregular";
-            padding: 48px 28px;
-            text-shadow: 0 0 10px white;
-            box-shadow: 0 0 400px 30px rgba(0, 0, 0, 0.3);
-            border: 2px dashed white;
-            background-color: rgba(22, 46, 54, 0.6);
-            opacity: 0;
-            transition: opacity 0.5s ease-out;
-            -moz-transition: opacity 0.5s ease-out;
-            -webkit-transition: opacity 0.5s ease-out; }
-          html body .home#second #videohome2 .content1:hover .rollovertext, html body .home#second #videohome2 .content2:hover .rollovertext, html body .home#second #videohome2 .content3:hover .rollovertext {
-            opacity: 1;
-            transition: opacity 0.5s ease-in;
-            -moz-transition: opacity 0.5s ease-in;
-            -webkit-transition: opacity 0.5s ease-in; }
+        html body .home#second .content1, html body .home#second .content2, html body .home#second .content3 {
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+          border: 2px dashed rgba(250, 250, 250, 0.4);
+          text-align: center;
+          font-size: 60px;
+          color: white;
+          letter-spacing: 2px;
+          display: block;
+          cursor: crosshair;
+          line-height: 200px;
+          background-color: rgba(250, 250, 250, 0.05); }
+        html body .home#second .content1 {
+          margin-top: 170px;
+          margin-left: 16%; }
+        html body .home#second .content2 {
+          margin-top: -160px;
+          margin-left: 67%; }
+        html body .home#second .content3 {
+          margin-top: 0;
+          margin-left: 30%; }
+        html body .home#second .heading {
+          opacity: 1;
+          transition: opacity 0.5s ease-out;
+          -moz-transition: opacity 0.5s ease-out;
+          -webkit-transition: opacity 0.5s ease-out; }
+        html body .home#second .content1:hover .heading, html body .home#second .content2:hover .heading, html body .home#second .content3:hover .heading {
+          opacity: 0;
+          transition: opacity 0.5s ease-in;
+          -moz-transition: opacity 0.5s ease-in;
+          -webkit-transition: opacity 0.5s ease-in; }
+        html body .home#second .rollovertext {
+          font-size: 31px;
+          line-height: 37px;
+          margin: -202px -2px;
+          color: white;
+          width: 144px;
+          height: 104px;
+          border-radius: 100px;
+          font-weight: 300;
+          letter-spacing: 0;
+          padding: 48px 28px;
+          text-shadow: 0 0 10px white;
+          box-shadow: 0 0 400px 30px rgba(0, 0, 0, 0.3);
+          border: 2px dashed white;
+          background-color: rgba(22, 46, 54, 0.6);
+          opacity: 0;
+          transition: opacity 0.5s ease-out;
+          -moz-transition: opacity 0.5s ease-out;
+          -webkit-transition: opacity 0.5s ease-out; }
+        html body .home#second .content1:hover .rollovertext, html body .home#second .content2:hover .rollovertext, html body .home#second .content3:hover .rollovertext {
+          opacity: 1;
+          transition: opacity 0.5s ease-in;
+          -moz-transition: opacity 0.5s ease-in;
+          -webkit-transition: opacity 0.5s ease-in; }
       html body .home#third {
         left: 200%; }
         html body .home#third #videohome3 {
           width: 100%;
           height: 100%;
           position: relative; }
-          html body .home#third #videohome3 .motifBlock {
-            top: 200px;
-            width: 818px;
+        html body .home#third .motifBlock {
+          top: 200px;
+          width: 818px;
+          height: 250px;
+          display: block;
+          position: absolute;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          left: 50%;
+          margin-left: -406px; }
+          html body .home#third .motifBlock .first, html body .home#third .motifBlock .second, html body .home#third .motifBlock .third {
+            width: 250px;
             height: 250px;
-            display: block;
-            position: absolute;
+            display: inline-block;
+            overflow: auto;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            left: 50%;
-            margin-left: -406px; }
-            html body .home#third #videohome3 .motifBlock .first, html body .home#third #videohome3 .motifBlock .second, html body .home#third #videohome3 .motifBlock .third {
+            border-radius: 125px;
+            background-color: rgba(134, 107, 72, 0.3);
+            text-align: center;
+            box-shadow: 0 0 300px -50px #333104;
+            -webkit-transition: text-shadow 0.2s linear;
+            -moz-transition: text-shadow 0.2s linear;
+            -ms-transition: text-shadow 0.2s linear;
+            -o-transition: text-shadow 0.2s linear;
+            transition: text-shadow 0.2s linear; }
+            html body .home#third .motifBlock .first .title, html body .home#third .motifBlock .second .title, html body .home#third .motifBlock .third .title {
+              height: 76px;
               width: 250px;
-              height: 250px;
-              display: inline-block;
-              overflow: auto;
+              margin-bottom: 10px;
+              color: #c8e20a;
+              line-height: 90px;
+              padding: 38px 0 0;
+              font-size: 39px;
+              letter-spacing: 1px;
               -moz-box-sizing: border-box;
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
-              border-radius: 125px;
-              background-color: rgba(134, 107, 72, 0.3);
-              text-align: center;
-              box-shadow: 0 0 300px -50px #333104;
-              -webkit-transition: text-shadow 0.2s linear;
-              -moz-transition: text-shadow 0.2s linear;
-              -ms-transition: text-shadow 0.2s linear;
-              -o-transition: text-shadow 0.2s linear;
-              transition: text-shadow 0.2s linear; }
-              html body .home#third #videohome3 .motifBlock .first .title, html body .home#third #videohome3 .motifBlock .second .title, html body .home#third #videohome3 .motifBlock .third .title {
-                height: 76px;
-                width: 250px;
-                margin-bottom: 10px;
-                color: #c8e20a;
-                line-height: 90px;
-                font-family: "tall_films_expandedregular";
-                padding: 38px 0 0;
-                font-size: 39px;
-                letter-spacing: 1px;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-                font-weight: bold;
-                text-shadow: 0 0 4px rgba(250, 250, 250, 0.2); }
-              html body .home#third #videohome3 .motifBlock .first .content, html body .home#third #videohome3 .motifBlock .second .content, html body .home#third #videohome3 .motifBlock .third .content {
-                height: 164px;
-                width: 250px;
-                margin-bottom: 10px;
-                color: white;
-                line-height: 22px;
-                font-family: "tall_films_expandedregular";
-                padding: 34px 20px 0;
-                font-size: 22px;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-                font-weight: bold; }
-            html body .home#third #videohome3 .motifBlock .second, html body .home#third #videohome3 .motifBlock .third {
-              margin-left: 30px; }
-            html body .home#third #videohome3 .motifBlock .dotdotdot {
-              height: 1px;
-              width: 30px;
-              border: 2px dotted #c8e20a;
-              display: inline-block;
+              font-weight: bold;
+              text-shadow: 0 0 4px rgba(250, 250, 250, 0.2); }
+            html body .home#third .motifBlock .first .content, html body .home#third .motifBlock .second .content, html body .home#third .motifBlock .third .content {
+              height: 164px;
+              width: 250px;
+              margin-bottom: 10px;
+              color: white;
+              line-height: 22px;
+              padding: 34px 20px 0;
+              font-size: 22px;
               -moz-box-sizing: border-box;
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
-              padding: 0;
-              margin: 0 -34px 125px -3px; }
+              font-weight: bold; }
+          html body .home#third .motifBlock .second, html body .home#third .motifBlock .third {
+            margin-left: 30px; }
+          html body .home#third .motifBlock .dotdotdot {
+            height: 1px;
+            width: 30px;
+            border: 2px dotted #c8e20a;
+            display: inline-block;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0 -34px 125px -3px; }
     html body .work {
       position: absolute;
       top: 0;
       width: 100%;
-      height: 100%;
-      z-index: 4;
-      background-color: red; }
+      height: 100%; }
       html body .work#forth {
         left: 300%; }
+        html body .work#forth #videowork1 {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+        html body .work#forth .content {
+          width: 200px;
+          height: 325px;
+          top: 160px;
+          right: 200px;
+          position: absolute;
+          overflow: auto;
+          z-index: 1;
+          text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36);
+          padding: 30px;
+          background-color: rgba(0, 0, 0, 0.07); }
+          html body .work#forth .content .client {
+            font-size: 25px;
+            color: #474747;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#forth .content .clientName {
+            font-size: 76px;
+            color: #b82a27;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#forth .content .description {
+            font-size: 16px;
+            text-align: right;
+            margin-top: 28px;
+            font-family: "Trebuchet MS";
+            width: 214px;
+            float: right; }
+            html body .work#forth .content .description p {
+              color: #474747; }
+            html body .work#forth .content .description a {
+              color: #b82a27;
+              cursor: crosshair; }
+            html body .work#forth .content .description ul li {
+              color: #474747;
+              margin: 0 0 10px;
+              padding: 0; }
+              html body .work#forth .content .description ul li span {
+                background: url("../img/ui/youtube-li.png") no-repeat;
+                background-position: left 7px;
+                background-size: 6px;
+                width: 6px;
+                height: 6px;
+                padding-left: 10px; }
       html body .work#fifth {
         left: 400%; }
+        html body .work#fifth #videowork2 {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+        html body .work#fifth .content {
+          width: 200px;
+          height: 500px;
+          top: 160px;
+          right: 200px;
+          position: absolute;
+          overflow: auto;
+          z-index: 1;
+          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.36);
+          padding: 30px;
+          background-color: rgba(0, 0, 0, 0.3); }
+          html body .work#fifth .content .client {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#fifth .content .clientName {
+            font-size: 76px;
+            color: #cac200;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#fifth .content .description {
+            font-size: 16px;
+            text-align: right;
+            margin-top: 28px;
+            font-family: "Trebuchet MS";
+            float: right; }
+            html body .work#fifth .content .description p {
+              color: white;
+              margin-top: 30px; }
+            html body .work#fifth .content .description a {
+              color: #cac200;
+              cursor: crosshair; }
+            html body .work#fifth .content .description ul li {
+              color: white;
+              margin: 0 0 10px;
+              padding: 0; }
+              html body .work#fifth .content .description ul li span {
+                background: url("../img/ui/kilmacthomas-li.png") no-repeat;
+                background-position: left 7px;
+                background-size: 6px;
+                width: 6px;
+                height: 6px;
+                padding-left: 10px; }
       html body .work#sixth {
         left: 500%; }
+        html body .work#sixth #imagework3 {
+          background: url("../img/ui/hari-bg.jpg") no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 100%;
+          width: 100%; }
+        html body .work#sixth .content {
+          width: 200px;
+          height: 345px;
+          top: 160px;
+          right: 200px;
+          position: absolute;
+          overflow: auto;
+          z-index: 1;
+          text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36);
+          padding: 30px;
+          background-color: rgba(255, 255, 255, 0.36); }
+          html body .work#sixth .content .client {
+            font-size: 25px;
+            color: #474747;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#sixth .content .clientName {
+            font-size: 76px;
+            color: #c5247c;
+            font-weight: bold;
+            text-align: right; }
+          html body .work#sixth .content .description {
+            font-size: 16px;
+            text-align: right;
+            margin-top: 28px;
+            font-family: "Trebuchet MS";
+            float: right; }
+            html body .work#sixth .content .description p {
+              color: #474747;
+              margin-top: 30px; }
+            html body .work#sixth .content .description a {
+              color: #c5247c;
+              cursor: crosshair; }
+            html body .work#sixth .content .description ul li {
+              color: #474747;
+              margin: 0 0 10px;
+              padding: 0; }
+              html body .work#sixth .content .description ul li span {
+                background: url("../img/ui/hari-li.png") no-repeat;
+                background-position: left 7px;
+                background-size: 6px;
+                width: 6px;
+                height: 6px;
+                padding-left: 10px; }
     html body .contact {
       position: absolute;
       top: 0;
       width: 100%;
-      height: 100%;
-      z-index: 4; }
+      height: 100%; }
       html body .contact#seventh {
         left: 600%; }
+        html body .contact#seventh #videocontact {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+        html body .contact#seventh .content {
+          width: 600px;
+          top: 110px;
+          left: 50%;
+          position: absolute;
+          overflow: auto;
+          z-index: 1;
+          padding: 30px;
+          margin-left: -330px;
+          text-align: left;
+          text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36); }
+          html body .contact#seventh .content .heading {
+            font-size: 76px;
+            color: #f41f24;
+            font-weight: bold; }
+          html body .contact#seventh .content .address {
+            margin-top: 50px; }
+            html body .contact#seventh .content .address a {
+              text-decoration: none;
+              color: black;
+              font-size: 30px;
+              font-weight: bold;
+              padding-left: 30px;
+              background: url("../img/ui/pin.png") no-repeat;
+              background-size: 20px 30px;
+              background-position: left 0;
+              cursor: crosshair; }
+            html body .contact#seventh .content .address:hover {
+              text-decoration: underline; }
+          html body .contact#seventh .content .contactCards {
+            height: 80px;
+            display: block;
+            margin: 26px 0 0;
+            padding: 0; }
+            html body .contact#seventh .content .contactCards .contactCard1, html body .contact#seventh .content .contactCards .contactCard2 {
+              background-color: rgba(250, 250, 250, 0.4);
+              width: 216px;
+              height: 87px;
+              margin: 0 30px 0 0;
+              float: left;
+              border-radius: 10px;
+              padding: 20px 20px;
+              border: 1px solid #adacae; }
+              html body .contact#seventh .content .contactCards .contactCard1 .name, html body .contact#seventh .content .contactCards .contactCard2 .name {
+                font-size: 30px;
+                color: #f41f24;
+                font-weight: bolder;
+                margin-bottom: 14px; }
+              html body .contact#seventh .content .contactCards .contactCard1 .phone, html body .contact#seventh .content .contactCards .contactCard1 .email a, html body .contact#seventh .content .contactCards .contactCard2 .phone, html body .contact#seventh .content .contactCards .contactCard2 .email a {
+                font-size: 16px;
+                font-family: "Trebuchet MS";
+                font-weight: lighter;
+                line-height: 22px;
+                color: #8a8a8a; }
   html ul#navigation {
     margin: 0; }
     html ul#navigation .previous {
@@ -269,15 +473,15 @@ html {
         width: 64px;
         outline: none;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
-        filter: alpha(opacity=10);
-        opacity: 0.1;
+        filter: alpha(opacity=30);
+        opacity: 0.3;
         transition: opacity 0.6s ease-out;
         -moz-transition: opacity 0.6s ease-out;
         -webkit-transition: opacity 0.6s ease-out; }
       html ul#navigation .previous a:hover {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-        filter: alpha(opacity=60);
-        opacity: 0.6;
+        filter: alpha(opacity=80);
+        opacity: 0.8;
         transition: opacity 0.6s ease-in;
         -moz-transition: opacity 0.6s ease-in;
         -webkit-transition: opacity 0.6s ease-in; }

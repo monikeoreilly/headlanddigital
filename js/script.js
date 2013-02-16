@@ -26,7 +26,7 @@ $(document).ready(function() {
 		scale:true,
 		zIndex:0
 	});
-	$('#forth').videoBG({
+	$('#videowork1').videoBG({
 		mp4:'assets/youtube.mp4',
 		ogv:'assets/youtube.ogv',
 		webm:'assets/youtube.webm',
@@ -51,31 +51,46 @@ $(document).ready(function() {
 		zIndex:0
 	});
 
-	// udpate left and right on nav clicks
+	/***********************************************
+	  udpate previous and next hrefs on nav clicks
+	***********************************************/
+	
+	// Step1, get a list of possible pages
+	var pageList = []; //create an empty array to fill with page names
 
-	$('#main').click(function (e) {
-		var clicked = e.target,
-			target, name;
+	$('.page').each(function () { // look at each .page
+		var pageName = $(this).attr('id'); // grab its id
+		pageList.push('#' + pageName); // pop that into our array, add a '#' for the href later
+	});
 
-		if ( clicked.tagName === "A") {
-			clicked = $(clicked);
+	// Step2, make our buttons nice and easy to access
+	// wrap them with the jQuery object and save to a variable.
+	// Now we can access them anywhere
+	var previous = $('.previous a'),
+		next = $('.next a');
 
-			target = clicked.attr('href');
+	// Step3, when a link in the #main is clicked
+	// grab its id and update the hrefs of the previous and next buttons.
+	$('#main a').click(function () {
 
-			console.log('go to ' + target);
+		// wrap the link in the jQuery object and save it in a valiable.
+		// grab its id
+		var clicked = $(this), // we use commas here, rather than a colon, because we're setting many vars at once. It's faster than many var statements.
+			target = clicked.attr('href'),
 
-			name = target.slice(1);
+		// so, now we know where we want to go.
+		// The previous and next buttons need to be given a href
+		// the hrefs will be it items before and after "target" in the pageList array
 
-			console.log(name);
+		// lets find out where in the array target is.
+			positionOfTarget = pageList.indexOf(target),
+		// now just grab the items before and after and save them
+			previousHref = pageList[positionOfTarget - 1],
+			nextHref = pageList[positionOfTarget + 1];
 
-			var x = 0,
-				count = $('.page').length;
-
-			$('.page').each(function (item) {
-				console.log(item);
-			});
-
-		}
-	})
+		// and finally, update the hrefs of the links
+		previous.attr('href', previousHref);
+		next.attr('href', nextHref);
+	});
 		
 })

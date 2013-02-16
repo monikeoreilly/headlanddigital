@@ -43,6 +43,7 @@ html
 
 	body 
 		overflow: hidden
+		font-family: "tall_films_expandedregular"
 
 		p
 			color: grey
@@ -70,7 +71,6 @@ html
 			a
 				margin-left: 35px
 				margin-right: 35px
-				font-family: "tall_films_expandedregular"
 				line-height: 50px
 				text-decoration: none
 				font-size: 18px
@@ -102,18 +102,24 @@ html
 					width: 100%
 					height: 100%
 					position: relative
+					filter: hue-rotate(20deg)
+					-webkit-filter: hue-rotate(20deg)
+					-moz-filter: hue-rotate(20deg)
+					-o-filter: hue-rotate(20deg)
+					-ms-filter: hue-rotate(20deg)
 
-					.content
-						width: 70%
-						max-width: 829px
-						max-height: 346px
-						min-width: 300px
-						padding-top: 230px
-						margin: 0 auto
-						
-						img
-							width: 100%
-							height: auto
+				.content
+					width: 70%
+					max-width: 829px
+					max-height: 346px
+					min-width: 300px
+					padding-top: 230px
+					margin: 0 auto
+
+					
+					img
+						width: 100%
+						height: auto
 
 
 			&#second
@@ -124,73 +130,71 @@ html
 					height: 100%
 					position: relative
 
-					.content1, .content2, .content3
-						width: 200px
-						height: 200px
-						border-radius: 100px
-						border: 2px dashed rgba(250,250,250,.4)
-						text-align: center
-						font-family: "tall_films_expandedregular"
-						font-size: 60px
-						color: white
-						letter-spacing: 2px
-						display: block
-						cursor: crosshair
-						line-height: 200px
-						background-color: rgba(250,250,250,.05)
+				.content1, .content2, .content3
+					width: 200px
+					height: 200px
+					border-radius: 100px
+					border: 2px dashed rgba(250,250,250,.4)
+					text-align: center
+					font-size: 60px
+					color: white
+					letter-spacing: 2px
+					display: block
+					cursor: crosshair
+					line-height: 200px
+					background-color: rgba(250,250,250,.05)
 
-					.content1
-						margin-top: 170px
-						margin-left: 16%
-											
-					.content2
-						margin-top: -160px
-						margin-left: 67%
+				.content1
+					margin-top: 170px
+					margin-left: 16%
+										
+				.content2
+					margin-top: -160px
+					margin-left: 67%
 
-					.content3
-						margin-top: 0
-						margin-left: 30%
+				.content3
+					margin-top: 0
+					margin-left: 30%
 
-					.heading
-						opacity: 1
-						transition: opacity .5s ease-out
-						-moz-transition: opacity .5s ease-out
-						-webkit-transition: opacity .5s ease-out
+				.heading
+					opacity: 1
+					transition: opacity .5s ease-out
+					-moz-transition: opacity .5s ease-out
+					-webkit-transition: opacity .5s ease-out
 
-					.content1:hover .heading, .content2:hover .heading, .content3:hover .heading
-						opacity: 0
-						transition: opacity .5s ease-in
-						-moz-transition: opacity .5s ease-in
-						-webkit-transition: opacity .5s ease-in
+				.content1:hover .heading, .content2:hover .heading, .content3:hover .heading
+					opacity: 0
+					transition: opacity .5s ease-in
+					-moz-transition: opacity .5s ease-in
+					-webkit-transition: opacity .5s ease-in
 
-					.rollovertext
-						font-size: 31px
-						line-height: 37px
-						margin: -202px -2px
-						color: white
-						width: 144px
-						height: 104px
-						border-radius: 100px
-						font-weight: 300
-						letter-spacing: 0
-						font-family: "tall_films_expandedregular"
-						padding: 48px 28px
-						text-shadow: 0 0 10px white
-						box-shadow: 0 0 400px 30px rgba(0,0,0,.3)
-						border: 2px dashed white
-						background-color: rgba(22,46,54,.6)
+				.rollovertext
+					font-size: 31px
+					line-height: 37px
+					margin: -202px -2px
+					color: white
+					width: 144px
+					height: 104px
+					border-radius: 100px
+					font-weight: 300
+					letter-spacing: 0
+					padding: 48px 28px
+					text-shadow: 0 0 10px white
+					box-shadow: 0 0 400px 30px rgba(0,0,0,.3)
+					border: 2px dashed white
+					background-color: rgba(22,46,54,.6)
 
-						opacity: 0
-						transition: opacity 0.5s ease-out
-						-moz-transition: opacity 0.5s ease-out
-						-webkit-transition: opacity 0.5s ease-out
+					opacity: 0
+					transition: opacity 0.5s ease-out
+					-moz-transition: opacity 0.5s ease-out
+					-webkit-transition: opacity 0.5s ease-out
 
-					.content1:hover .rollovertext, .content2:hover .rollovertext, .content3:hover .rollovertext
-						
-						opacity: 1
-						transition: opacity .5s ease-in
-						-moz-transition: opacity .5s ease-in
-						-webkit-transition: opacity .5s ease-in
+				.content1:hover .rollovertext, .content2:hover .rollovertext, .content3:hover .rollovertext
+					
+					opacity: 1
+					transition: opacity .5s ease-in
+					-moz-transition: opacity .5s ease-in
+					-webkit-transition: opacity .5s ease-in
 
 
 			&#third
@@ -201,80 +205,78 @@ html
 					height: 100%
 					position: relative
 
-					.motifBlock
-						top: 200px
-						width: 818px
+				.motifBlock
+					top: 200px
+					width: 818px
+					height: 250px
+					display: block
+					position: absolute
+					-moz-box-sizing: border-box
+					-webkit-box-sizing: border-box
+					box-sizing: border-box
+					left: 50%
+					margin-left: -406px
+
+					.first, .second, .third
+						width: 250px
 						height: 250px
-						display: block
-						position: absolute
+						display: inline-block
+						overflow: auto
 						-moz-box-sizing: border-box
 						-webkit-box-sizing: border-box
 						box-sizing: border-box
-						left: 50%
-						margin-left: -406px
+						border-radius: 125px
+						background-color: rgba(134,107,72,.3)
+						text-align: center
+						box-shadow: 0 0 300px -50px #333104
 
-						.first, .second, .third
+						-webkit-transition: text-shadow 0.2s linear
+						-moz-transition: text-shadow 0.2s linear
+						-ms-transition: text-shadow 0.2s linear
+						-o-transition: text-shadow 0.2s linear
+						transition: text-shadow 0.2s linear
+
+						.title
+							height: 76px
 							width: 250px
-							height: 250px
-							display: inline-block
-							overflow: auto
+							margin-bottom: 10px
+							color: #c8e20a
+							line-height: 90px
+							padding: 38px 0 0
+							font-size: 39px
+							letter-spacing: 1px
 							-moz-box-sizing: border-box
 							-webkit-box-sizing: border-box
 							box-sizing: border-box
-							border-radius: 125px
-							background-color: rgba(134,107,72,.3)
-							text-align: center
-							box-shadow: 0 0 300px -50px #333104
+							font-weight: bold
+							text-shadow: 0 0 4px rgba(250, 250, 250, 0.2)
 
-							-webkit-transition: text-shadow 0.2s linear
-							-moz-transition: text-shadow 0.2s linear
-							-ms-transition: text-shadow 0.2s linear
-							-o-transition: text-shadow 0.2s linear
-							transition: text-shadow 0.2s linear
-
-							.title
-								height: 76px
-								width: 250px
-								margin-bottom: 10px
-								color: #c8e20a
-								line-height: 90px
-								font-family: "tall_films_expandedregular"
-								padding: 38px 0 0
-								font-size: 39px
-								letter-spacing: 1px
-								-moz-box-sizing: border-box
-								-webkit-box-sizing: border-box
-								box-sizing: border-box
-								font-weight: bold
-								text-shadow: 0 0 4px rgba(250, 250, 250, 0.2)
-
-							.content
-								height: 164px
-								width: 250px
-								margin-bottom: 10px
-								color: white
-								line-height: 22px
-								font-family: "tall_films_expandedregular"
-								padding: 34px 20px 0
-								font-size: 22px
-								-moz-box-sizing: border-box
-								-webkit-box-sizing: border-box
-								box-sizing: border-box
-								font-weight: bold
-
-						.second, .third
-							margin-left: 30px
-
-						.dotdotdot
-							height: 1px
-							width: 30px
-							border: 2px dotted rgb(200,226,10)
-							display: inline-block
+						.content
+							height: 164px
+							width: 250px
+							margin-bottom: 10px
+							color: white
+							line-height: 22px
+							padding: 34px 20px 0
+							font-size: 22px
 							-moz-box-sizing: border-box
 							-webkit-box-sizing: border-box
 							box-sizing: border-box
-							padding: 0
-							margin: 0 -34px 125px -3px
+							font-weight: bold
+
+					.second, .third
+						margin-left: 30px
+
+					.dotdotdot
+						height: 1px
+						width: 30px
+						border: 2px dotted rgb(200,226,10)
+						display: inline-block
+						-moz-box-sizing: border-box
+						-webkit-box-sizing: border-box
+						box-sizing: border-box
+						padding: 0
+						margin: 0 -34px 125px -3px
 
 
 		/*   END OF HOME
@@ -285,17 +287,197 @@ html
 			top: 0
 			width: 100%
 			height: 100%
-			z-index: 4
-			background-color: red
 
 			&#forth 
 				left: 300%
 
+				#videowork1
+					width: 100%
+					height: 100%
+					position: relative
+
+				.content
+					width: 200px
+					height: 325px
+					top: 160px
+					right: 200px
+					position: absolute
+					overflow: auto
+					z-index: 1
+					text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36)
+					padding: 30px
+					background-color: rgba(0, 0, 0, 0.07)
+
+					.client
+						font-size: 25px
+						color: #474747
+						font-weight: bold
+						text-align: right
+
+					.clientName
+						font-size: 76px
+						color: #B82A27
+						font-weight: bold
+						text-align: right
+
+					.description
+						font-size: 16px
+						text-align: right
+						margin-top: 28px
+						font-family: "Trebuchet MS"
+						width: 214px
+						float: right
+
+						p
+							color: #474747
+
+						a
+							color: #B82A27
+							cursor: crosshair
+
+						ul
+
+							li
+								color: #474747
+								margin: 0 0 10px
+								padding: 0
+								
+								span
+									background: url("../img/ui/youtube-li.png") no-repeat
+									background-position: left 7px
+									background-size: 6px
+									width: 6px
+									height: 6px
+									padding-left: 10px
+
 			&#fifth
 				left: 400%
 
+				#videowork2
+					width: 100%
+					height: 100%
+					position: relative
+
+				.content
+					width: 200px
+					height: 500px
+					top: 160px
+					right: 200px
+					position: absolute
+					overflow: auto
+					z-index: 1
+					text-shadow: 0 2px 10px rgba(0, 0, 0, 0.36)
+					padding: 30px
+					background-color: rgba(0, 0, 0, 0.3)
+
+					.client
+						font-size: 25px
+						color: white
+						font-weight: bold
+						text-align: right
+
+					.clientName
+						font-size: 76px
+						color: rgb(202, 194, 0)
+						font-weight: bold
+						text-align: right
+
+					.description
+						font-size: 16px
+						text-align: right
+						margin-top: 28px
+						font-family: "Trebuchet MS"
+						float: right
+
+						p
+							color: white
+							margin-top: 30px
+
+						a
+							color: rgb(202, 194, 0)
+							cursor: crosshair
+
+						ul
+
+							li
+								color: white
+								margin: 0 0 10px
+								padding: 0
+								
+								span
+									background: url('../img/ui/kilmacthomas-li.png') no-repeat
+									background-position: left 7px
+									background-size: 6px
+									width: 6px
+									height: 6px
+									padding-left: 10px
+
 			&#sixth
 				left: 500%
+
+				#imagework3
+					background: url('../img/ui/hari-bg.jpg') no-repeat center center
+					-webkit-background-size: cover
+					-moz-background-size: cover
+					-o-background-size: cover
+					background-size: cover
+					height: 100%
+					width: 100%
+
+				.content
+					width: 200px
+					height: 345px
+					top: 160px
+					right: 200px
+					position: absolute
+					overflow: auto
+					z-index: 1
+					text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36)
+					padding: 30px
+					background-color: rgba(255,255,255,.36)
+
+					.client
+						font-size: 25px
+						color: #474747
+						font-weight: bold
+						text-align: right
+
+					.clientName
+						font-size: 76px
+						color: #c5247c
+						font-weight: bold
+						text-align: right
+
+					.description
+						font-size: 16px
+						text-align: right
+						margin-top: 28px
+						font-family: "Trebuchet MS"
+						float: right
+
+						p
+							color: #474747
+							margin-top: 30px
+
+						a
+							color: #c5247c
+							cursor: crosshair
+
+						ul
+
+							li
+								color: #474747
+								margin: 0 0 10px
+								padding: 0
+								
+								span
+									background: url('../img/ui/hari-li.png') no-repeat
+									background-position: left 7px
+									background-size: 6px
+									width: 6px
+									height: 6px
+									padding-left: 10px
+
 
 
 		/*   END OF WORK
@@ -306,10 +488,77 @@ html
 			top: 0
 			width: 100%
 			height: 100%
-			z-index: 4
 
 			&#seventh 
 				left: 600%
+
+				#videocontact
+					width: 100%
+					height: 100%
+					position: relative
+
+				.content
+					width: 600px
+					top: 110px
+					left: 50%
+					position: absolute
+					overflow: auto
+					z-index: 1
+					padding: 30px
+					margin-left: -330px
+					text-align: left
+					text-shadow: 0 2px 10px rgba(255, 255, 255, 0.36)
+					
+					.heading
+						font-size: 76px
+						color: #F41F24
+						font-weight: bold
+
+					.address
+						margin-top: 50px
+
+						a
+							text-decoration: none
+							color: black
+							font-size: 30px
+							font-weight: bold
+							padding-left: 30px
+							background: url('../img/ui/pin.png') no-repeat
+							background-size: 20px 30px
+							background-position: left 0
+							cursor: crosshair
+
+						&:hover
+							text-decoration: underline
+
+					.contactCards
+						height: 80px
+						display: block
+						margin: 26px 0 0
+						padding: 0
+
+						.contactCard1, .contactCard2
+							background-color: rgba(250, 250, 250, 0.4)
+							width: 216px
+							height: 87px
+							margin: 0 30px 0 0
+							float: left
+							border-radius: 10px
+							padding: 20px 20px
+							border: 1px solid #adacae
+
+							.name
+								font-size: 30px
+								color: #F41F24
+								font-weight: bolder
+								margin-bottom: 14px
+
+							.phone, .email a
+								font-size: 16px
+								font-family: "Trebuchet MS"
+								font-weight: lighter
+								line-height: 22px
+								color: #8a8a8a
 
 	/*	END OF CONTACT
 		BEGIN TOGGLE CONTROLS	*/
@@ -331,16 +580,16 @@ html
 				width: 64px
 				outline: none
 				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"
-				filter: alpha(opacity=10)
-				opacity: 0.1
+				filter: alpha(opacity=30)
+				opacity: 0.3
 				transition: opacity .6s ease-out
 				-moz-transition: opacity .6s ease-out
 				-webkit-transition: opacity .6s ease-out
 
 			a:hover 
 				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
-				filter: alpha(opacity=60)
-				opacity: 0.6
+				filter: alpha(opacity=80)
+				opacity: 0.8
 				transition: opacity .6s ease-in
 				-moz-transition: opacity .6s ease-in
 				-webkit-transition: opacity .6s ease-in
